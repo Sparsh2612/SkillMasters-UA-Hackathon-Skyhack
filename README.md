@@ -14,53 +14,6 @@
 
 ---
 
-## 📁 Repository structure
-
-```text
-ua-hackathon/
-├─ README.md
-├─ environment.yml                # or requirements.txt
-├─ .gitignore
-│
-├─ data/
-│  ├─ raw/                        # place the 5 confidential CSVs here (git-ignored)
-│  │   ├─ Airports Data.csv
-│  │   ├─ Bag Level Data.csv
-│  │   ├─ Flight Level Data.csv
-│  │   ├─ PNR Remark Level Data.csv
-│  │   └─ PNR Flight Level Data.csv
-│  ├─ interim/                    # cleaned / de-duplicated intermediates
-│  └─ processed/                  # final modeling tables
-│
-├─ notebooks/
-│  ├─ 00_setup_and_ingest.ipynb
-│  ├─ 01_eda_delays_loads.ipynb
-│  ├─ 02_bag_complexity.ipynb
-│  ├─ 03_loads_vs_delay.ipynb
-│  ├─ 04_ssr_vs_delay_control_load.ipynb
-│  ├─ 05_flight_difficulty_score.ipynb     # MAIN: builds score, rank, class + exports
-│  └─ 06_operational_playbook.ipynb        # renders one-pager & figures
-│
-├─ src/                                    # (optional) helpers used in notebooks
-│  ├─ __init__.py
-│  ├─ io_utils.py
-│  ├─ cleaning.py
-│  ├─ keys.py
-│  ├─ features.py
-│  └─ scoring.py
-│
-├─ reports/
-│  ├─ figures/                             # PNG/SVG charts for the deck
-│  └─ UA_Operational_Playbook.pdf          # one-pager (optional)
-│
-└─ outputs/
-   ├─ UA_Flight_Difficulty_Score_FINAL.csv
-   └─ UA_FDS_Minimal_ORDERED_HighScoreIsDifficult.csv
-```
-
-> **Privacy:** keep `data/raw/` **out of git**. If needed, include a tiny **synthetic sample** in `data/sample/` for demo.
-
----
 
 ## ⚙️ Setup
 
