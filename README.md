@@ -174,4 +174,4 @@ jupyterlab
 
 * **Code:** MIT License
 * **Data:** Remains the property of the provider; not redistributed.
-* Built by **[Your Team Name]** for the **United Airlines Hackathon**.
+* Built by **Skill Masters [Sparsh, Vansh]** for the **United Airlines Hackathon**.
